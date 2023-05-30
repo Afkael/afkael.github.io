@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.text_field {
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: start;
+}
+
+.input {
+    background-color: transparent;
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    margin: 100px;
+    border-radius: 20px;
+    border: none;
+    font-size: 24px;
+    color: #0A3871;
+}
+
+.input::placeholder {
+    color: #0A3871;
+}
+
+.output {
+    resize: none;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
+    margin-left: 300px;
+}
+
+.encrypt, .decrypt {
+    padding: 17px 16px;
+    width: 350px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.encrypt {
+    background-color: #0A3871;
+    color: #fff;
+    border: none;
+}
+
+.encrypt:hover {
+    cursor: pointer;
+}
+
+.encrypt:active {
+    background-color: #0e4d99;
+}
+
+.decrypt {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.decrypt:hover {
+    cursor: pointer;
+}
+
+.decrypt:active {
+    background-color: #aec1d8;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 320px;
+}
+
+.info p {
+    font-style: normal;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    line-height: 150%;
+    padding: 0 0 0 10px;
+}
+
+.info img {
+    width: 16px;
+    height: 16px;
+}
+
+.text_area {
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    width: 300px;
+    height: 75vh;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    color: #495057;
+    box-shadow: 0 4px 30px -8px rgba(0, 0, 0, 0.205);
+}
+
+.output::placeholder {
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    padding-top: 390px;
+    background: no-repeat url(images/output_img.svg);
+    background-size: 110%;
+    background-position: center;
+}
+
+.copy {
+    display: none;
+    padding: 16px;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+}
+
+.copy:hover {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+}
